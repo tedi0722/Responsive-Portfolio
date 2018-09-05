@@ -1,0 +1,164 @@
+body { 
+    background-image: url(../images/wall.png)
+}
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.navs {
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    padding: 20px;
+    color: #777777;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.navbar {
+    display: flex;
+    width: 960px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.content-box {
+    color: #777777;
+    background: #ffffff;
+    width: 960px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content-title {
+    border-bottom: 3px double #777777;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#profile {
+    width: 150px;
+    margin: 20px;
+    float: left;
+}
+
+.footer {
+    background: #666666;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 7%;
+    border-top: solid 10px #4aaaa5;
+    color: black;
+    /* position: fixed;
+    left: 0;
+    bottom: 0; */
+}
+
+.gallery1 {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.holder {
+    position: relative;
+    padding: 10px;
+}
+
+.imagetext {
+    position: absolute;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    bottom: 20px;
+    right: 90px;
+}
+
+form.info {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[name="message"] {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+button {
+    color: #ffffff;
+    background-color: #4aaaa5;
+    padding: 5px;
+}
+
+h6 {
+    margin: 10px 0 0;
+}
+
+@media (max-width: 980px) {
+    .navbar {
+        max-width: 768px;
+    }
+    .content-box {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        max-width: 100%;
+    }
+    .content-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navs {
+        max-width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+    nav a{
+        padding: 5px;
+    }
+
+    .nameblock {
+        text-align: center;
+    }
+    #profile {
+        float: none;
+        width: 80%;
+    }
+
+    .gallery1 {
+        grid-template-columns: auto;
+    }
+}
