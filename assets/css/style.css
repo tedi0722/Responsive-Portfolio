@@ -36,18 +36,19 @@ nav a{
     justify-content: space-between;
 }
 
-.content-box {
-    color: #777777;
-    background: #ffffff;
+.wrapper {
+    min-height: calc(100vh - 70px);
     width: 960px;
     margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: 1px solid #cccccc;
 }
 
 .content {
+    color: #777777;
+    background: #ffffff;
     padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
 }
 
 .content-title {
@@ -123,7 +124,7 @@ h6 {
     .navbar {
         max-width: 768px;
     }
-    .content-box {
+    .wrapper {
         max-width: 768px;
     }
 }
@@ -132,7 +133,7 @@ h6 {
     .navbar {
         max-width: 100%;
     }
-    .content-box {
+    .wrapper {
         max-width: 100%;
     }
 }
